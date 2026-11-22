@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Aura Cafe · POS</title>
+  <meta name="theme-color" content="#311F11" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style id="page-style"></style>
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="assets/logo-reverse.png" alt="Aura Cafe" class="brand-logo" />
+      </div>
+      <nav class="nav" id="side-nav"></nav>
+      <div class="side-foot">
+        <div class="side-clock" id="side-clock"></div>
+        <div class="side-tag">A LITTLE PLACE · A BETTER MOOD</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <img src="assets/glass.png" alt="" class="topbar-glass" />
+          <div>
+            <h1 id="page-title">বিক্রি</h1>
+            <div class="topbar-sub" id="page-sub"></div>
+          </div>
+        </div>
+        <div class="topbar-right" id="topbar-actions"></div>
+      </header>
+      <div class="view" id="view"></div>
+    </main>
+
+    <nav class="tabbar" id="tab-nav"></nav>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root"></div>
+  <div id="tip" class="tip" role="tooltip"></div>
+  <div id="print-root" aria-hidden="true"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
